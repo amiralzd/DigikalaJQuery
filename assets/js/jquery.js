@@ -1,31 +1,25 @@
 $(document).ready(function(){
     $(".search").click(function(e){
         e.stopPropagation();
-        $(".search-container").show();
+        $(".search-container").fadeIn();
         $(".box").hide();
-        $(".bg-search-hover").show();
+        $(".bg-search-hover").fadeIn();
         $("body").css({
             "overflow": "hidden",
         });
     });
 
     $(document).click(function() {
-        $(".search-container").hide();
+        $(".search-container").fadeOut();
         $(".box").show();
-        $(".bg-search-hover").hide();
+        $(".bg-search-hover").fadeOut();
         $("body").css({
             "overflow": "auto",
         });
     });
 });
 
-// $(window).scroll(function(){
-//     if($(this).scrollTop() >= 50){
-//         $(".nav").fadeOut();
-//     }else if($(".nav").scrollTop >= "-10"){
-//         $(".nav").fadeIn();
-//     }
-// });
+
 
 
 
@@ -39,7 +33,68 @@ $(document).ready(function(){
             $('.grouping-items-hover-shadow').fadeOut();
         }
     );
+
+
+	$('.grouping-items-hover-shadow').hover(function(){
+		$('.grouping-items-hover').fadeOut();
+        $('.grouping-items-hover-shadow').fadeOut();
+	});
 });
+
+
+
+
+
+// $(document).ready(function(){
+//     $('.grouping-menu-item2').mouseenter(
+// 		function(){
+// 			$('.grouping-Specifications').hide();
+// 			$('.grouping-Specifications2').show();
+// 		});
+// 		$('.grouping-menu-item2').mouseleave(function(){
+// 			$('.grouping-Specifications').show();
+// 			$('.grouping-Specifications2').hide();
+// 		}
+// 	);
+
+// 	$(".grouping-Specifications2").hover(function(){
+// 		$(this).show();
+// 		$('.grouping-Specifications').hide();
+// 	});
+
+
+// });
+
+
+
+
+$(document).ready(function(){
+	$('.grouping-menu-item2').hover(function(){
+		$('.grouping-menu-item1').css({
+			'background':'#efefef',
+		})
+		$('.grouping-menu-item2').css({
+			'background':'#fff',
+		})
+		$('.grouping-Specifications').hide();
+		$('.grouping-Specifications2').show();
+	});
+	$('.grouping-menu-item1').hover(function(){
+		$('.grouping-Specifications').show();
+		$('.grouping-Specifications2').hide();
+		$('.grouping-menu-item1').css({
+			'background':'#fff',
+		})
+		$('.grouping-menu-item2').css({
+			'background':'#efefef',
+		})
+	});
+});
+
+
+
+
+
 
 
 $(document).ready(function () {
@@ -81,20 +136,40 @@ $(document).ready(function(){
         $('.location-popup').fadeOut();
         $('.back-shadow-popup').fadeOut();
     });
+
+    $('.back-shadow-popup').click(function(){
+        $('.location-popup').fadeOut();
+    });
 });
 
 
 
 
 
-// $(document).ready(function(){
-//     $('grouping-menu-item2').hover(function(){
-//         $('grouping-Specifications').hide();
-//         $('grouping-Specifications2').fadeIn();
-//     });
-// });
-
-
+$(document).ready(function() {
+	// State select change event handler
+	$('.location-chose-state').change(function() {
+		var selectedState = $(this).val();
+		var selectedStateText = $(this).find('option:selected').text();
+	
+		// Update city options based on the selected state
+		updateCityOptions(selectedState);
+	
+		// Clear the selected city and location text
+		$('.location-chose-city').val('');
+		$('.location-text').text('Selected location: ');
+	});
+  
+	// City select change event handler
+	$('.location-chose-city').change(function() {
+		var selectedCity = $(this).find('option:selected').text();
+		var selectedStateText = $('.location-chose-state').find('option:selected').text();
+  
+		// Update the selected location text
+		$('.location-text').text('ارسال به ' + selectedStateText + ' , ' + selectedCity);
+		$('.location-hover').text('ارسال به ' + selectedStateText + ' , ' + selectedCity);
+	});
+});
 
 
 
