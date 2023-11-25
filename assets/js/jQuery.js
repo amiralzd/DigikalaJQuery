@@ -1,3 +1,4 @@
+// ---------------header-------------------
 $(document).ready(function(){
     $(".search").click(function(e){
         e.stopPropagation();
@@ -22,6 +23,17 @@ $(document).ready(function(){
 
 
 
+// media query
+
+$(document).ready(function(){
+	$(".search").click(function(){
+		$('.searchBox-hover-responsive').slide();
+	});
+});
+
+
+
+// ---------------- nav ---------------------
 
 $(document).ready(function(){
     $(".grouping-items").hover(
