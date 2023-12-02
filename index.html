@@ -10,7 +10,31 @@
 <body>
     <header class="header">
 
-        <div class="searchBox-hover-responsive"></div>
+
+        <div class="bkshadow-hover-responsive"></div>
+
+        <div class="searchBox-hover-responsive">
+            <div class="searchBoxHover">
+                <div class="searchBoxHover-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="searchBoxHover-search">
+                    <input type="search" id="search" placeholder="جستجو">
+                </div>
+            </div>
+
+            <div class="history-responsive owl-carouse">
+                <div class="history-responsive-title">
+                    <div class="history-responsive-title-clock"><i class="fa-regular fa-clock"></i></div>
+                    <div class="history-responsive-title-text"><p>اخرین جستجو های شما</p></div>
+                    <div class="history-responsive-title-trash"><i class="fa-regular fa-trash-can"></i></div>
+                </div>
+                <div class="history-responsive-body">
+                    <div class="history-responsive-body-item1"></div>
+                    <div class="history-responsive-body-item2"></div>
+                    <div class="history-responsive-body-item3"></div>
+                </div>
+            </div>
+        </div>
+
 
         
         <div class="container">
@@ -19,84 +43,86 @@
                     <img src="assets/img/logo.svg" alt="">
                 </div>
                 <div class="search">
-                    <div class="search-container"> <!-- for when search box click -->
-                        <div class="search-header">
-                            <div class="box-hover">
-                                <div class="icon-hover">
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
-                                        <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
-                                    </svg>
+                    <div class="show-search">
+                        <div class="search-container"> <!-- for when search box click -->
+                            <div class="search-header">
+                                <div class="box-hover">
+                                    <div class="icon-hover">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
+                                            <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                                        </svg>
+                                    </div>
+                                    <input type="search" id="searchBox-hover" placeholder="جستجو کنید ...">
                                 </div>
-                                <input type="search" id="searchBox-hover" placeholder="جستجو کنید ...">
                             </div>
-                        </div>
-
-                        <div class="search-container-body">
-                            <div class="cardOne">
-                                <div class="cardOne-head">
-                                    <div class="cardOne-head-box1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
-                                            <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
-                                        </svg>
+    
+                            <div class="search-container-body">
+                                <div class="cardOne">
+                                    <div class="cardOne-head">
+                                        <div class="cardOne-head-box1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                                                <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24.984375 6.9863281 A 1.0001 1.0001 0 0 0 24 8 L 24 22.173828 A 3 3 0 0 0 22 25 A 3 3 0 0 0 22.294922 26.291016 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 23.708984 27.705078 A 3 3 0 0 0 25 28 A 3 3 0 0 0 28 25 A 3 3 0 0 0 26 22.175781 L 26 8 A 1.0001 1.0001 0 0 0 24.984375 6.9863281 z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="cardOne-head-text"><p>آخرین جستجوهای شما</p></div>
+                                        <div class="cardOne-head-box2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30">
+                                                <path d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z"></path>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <div class="cardOne-head-text"><p>آخرین جستجوهای شما</p></div>
-                                    <div class="cardOne-head-box2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 30 30">
-                                            <path d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z"></path>
-                                        </svg>
+                                    <div class="cardOne-items">
+                                        <a href="" class="cardOne-items-one">
+                                            <div class="cardOne-items-one-body">
+                                                <div class="cardOne-items-one-body-text">
+                                                    <span>asus tuf</span>
+                                                </div>
+                                                <div class="cardOne-items-one-body-icon">
+                                                    <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="" class="cardOne-items-one">
+                                            <div class="cardOne-items-one-body">
+                                                <div class="cardOne-items-one-body-text">
+                                                    <span>asus tuf</span>
+                                                </div>
+                                                <div class="cardOne-items-one-body-icon">
+                                                    <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="" class="cardOne-items-one">
+                                            <div class="cardOne-items-one-body">
+                                                <div class="cardOne-items-one-body-text">
+                                                    <span>asus tuf</span>
+                                                </div>
+                                                <div class="cardOne-items-one-body-icon">
+                                                    <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="" class="cardOne-items-one">
+                                            <div class="cardOne-items-one-body">
+                                                <div class="cardOne-items-one-body-text">
+                                                    <span>asus tuf</span>
+                                                </div>
+                                                <div class="cardOne-items-one-body-icon">
+                                                    <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="" class="cardOne-items-one">
+                                            <div class="cardOne-items-one-body">
+                                                <div class="cardOne-items-one-body-text">
+                                                    <span>asus tuf</span>
+                                                </div>
+                                                <div class="cardOne-items-one-body-icon">
+                                                    <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="cardOne-items">
-                                    <a href="" class="cardOne-items-one">
-                                        <div class="cardOne-items-one-body">
-                                            <div class="cardOne-items-one-body-text">
-                                                <span>asus tuf</span>
-                                            </div>
-                                            <div class="cardOne-items-one-body-icon">
-                                                <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="" class="cardOne-items-one">
-                                        <div class="cardOne-items-one-body">
-                                            <div class="cardOne-items-one-body-text">
-                                                <span>asus tuf</span>
-                                            </div>
-                                            <div class="cardOne-items-one-body-icon">
-                                                <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="" class="cardOne-items-one">
-                                        <div class="cardOne-items-one-body">
-                                            <div class="cardOne-items-one-body-text">
-                                                <span>asus tuf</span>
-                                            </div>
-                                            <div class="cardOne-items-one-body-icon">
-                                                <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="" class="cardOne-items-one">
-                                        <div class="cardOne-items-one-body">
-                                            <div class="cardOne-items-one-body-text">
-                                                <span>asus tuf</span>
-                                            </div>
-                                            <div class="cardOne-items-one-body-icon">
-                                                <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="" class="cardOne-items-one">
-                                        <div class="cardOne-items-one-body">
-                                            <div class="cardOne-items-one-body-text">
-                                                <span>asus tuf</span>
-                                            </div>
-                                            <div class="cardOne-items-one-body-icon">
-                                                <img style="width: 12px;height: 12px;" src="assets/img/icons8-less-than-24.png" alt="">
-                                            </div>
-                                        </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -543,32 +569,30 @@
 
 
             <div class="nav-items-1 border">
-                <div class="nav-items-1-icon"></div>
+                <div class="nav-items-1-icon"><i class="fa-solid fa-percent"></i></div>
                 <span class="nav-items-1-text">شگفت‌انگیزها</span>
             </div>
 
             <div class="nav-items-1 border">
-                <div class="nav-items-1-icon"></div>
+                <div class="nav-items-1-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+                <span class="nav-items-1-text">سوپرمارکت</span>
+            </div>
+
+            <div class="nav-items-1 border">
+                <div class="nav-items-1-icon"><i class="fa-brands fa-cc-visa"></i></div>
+                <span class="nav-items-1-text">کارت هدیه</span>
+            </div>
+
+            <div class="nav-items-1 border">
+                <div class="nav-items-1-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
                 <span class="nav-items-1-text">شگفت‌انگیزها</span>
             </div>
 
             <div class="nav-items-1 border">
-                <div class="nav-items-1-icon"></div>
                 <span class="nav-items-1-text">شگفت‌انگیزها</span>
             </div>
 
             <div class="nav-items-1 border">
-                <div class="nav-items-1-icon"></div>
-                <span class="nav-items-1-text">شگفت‌انگیزها</span>
-            </div>
-
-            <div class="nav-items-1 border">
-                <div class="nav-items-1-icon"></div>
-                <span class="nav-items-1-text">شگفت‌انگیزها</span>
-            </div>
-
-            <div class="nav-items-1 border">
-                <div class="nav-items-1-icon"></div>
                 <span class="nav-items-1-text">شگفت‌انگیزها</span>
             </div>
         </div>
@@ -658,7 +682,8 @@
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/jQuery.js"></script>
+    <script src="assets/js/reesponsive.js"></script>
+    <script src="assets/js/desktop.js"></script>
 
 </body>
 </html>
