@@ -9,6 +9,12 @@ $(document).ready(function(){
 		$("body").css({
 			"overflow": "hidden",
 		});
+		$('.cardOne-head-box2').click(function(){
+			$('.search-container-body').hide();
+			$('.search-container').css({
+				"height" : "100px",
+			});
+		});
 	});
 	
 	$(document).click(function() {
@@ -24,7 +30,36 @@ $(document).ready(function(){
 
 
 
-
+// $(document).ready(function(){
+// 	var owl = $('.history-responsive-body');
+// 	owl.owlCarousel({
+// 		items: 3,
+// 		nav:true,
+// 		margin:10,
+// 		responsive:{
+// 			0:{
+// 				items:1
+// 			},
+// 			600:{
+// 				items:3
+// 			},            
+// 			960:{
+// 				items:5
+// 			},
+// 			1200:{
+// 				items:6
+// 			}
+// 		}
+// 	});
+// 	owl.on('mousewheel', '.history-responsive-body', function (e) {
+// 		if (e.deltaY>0) {
+// 			owl.trigger('next.owl');
+// 		} else {
+// 			owl.trigger('prev.owl');
+// 		}
+// 		e.preventDefault();
+// 	});
+// });
 
 
 
@@ -67,9 +102,15 @@ $(document).ready(function(){
         function(){
             $('.grouping-items-hover-shadow').fadeIn();
             $('.grouping-items-hover').fadeIn();
+            $('body').css({
+				"overflow-y" : "hidden",
+			});
         },function (){
             $('.grouping-items-hover').fadeOut();
             $('.grouping-items-hover-shadow').fadeOut();
+			$('body').css({
+				"overflow-y" : "auto",
+			});
         }
     );
 

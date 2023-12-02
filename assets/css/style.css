@@ -13,6 +13,7 @@
 
 body{
     font-family: woff;
+    height: 2000px;
 }
 
 select,option{
@@ -191,6 +192,8 @@ a{
     background-color: #000;
     opacity: 0.2;
     display: none;
+    position: absolute;
+    z-index: 80;
 }
 
 .search-container-body{
@@ -240,6 +243,7 @@ a{
     justify-content: center;
     align-items: center;
     text-align: left;
+    cursor: pointer;
 }
 
 .cardOne-items{
@@ -361,7 +365,6 @@ a{
     height: 40px;
     margin: auto;
     position: sticky;
-    background-color: #efefef;
     top: 68px;
     z-index: 99;
     display: flex;
@@ -391,7 +394,9 @@ a{
 .grouping-items-icon{
     width: 25px;
     height: 25px;
-    background-color: rgb(183, 39, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grouping-items-text{
@@ -413,6 +418,8 @@ a{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: #737373;
+    font-size: small;
 }
 
 /* .border::after {
@@ -434,6 +441,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 }
 
 .nav-items-1-text{
@@ -463,6 +471,7 @@ a{
     right: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 3.2px;
 }
 
 .grouping-items-container{
@@ -480,6 +489,20 @@ a{
     overflow-y: scroll;
     overflow-x: hidden;
     display: inline-block;
+}
+
+.grouping-hover-menu::-webkit-scrollbar{
+    width: 10px;
+}
+
+.grouping-hover-menu::-webkit-scrollbar-track{
+    background: #e8e8e8;
+    border-radius: 5px;
+}
+
+.grouping-hover-menu::-webkit-scrollbar-thumb{
+    background-color: #c2c2c2;
+    border-radius: 5px;
 }
 
 .grouping-menu-item1{
@@ -838,6 +861,20 @@ a{
     background-color: #fff;
 }
 
+.grouping-Specifications::-webkit-scrollbar{
+    width: 10px;
+}
+
+.grouping-Specifications::-webkit-scrollbar-track{
+    background: #e8e8e8;
+    border-radius: 5px;
+}
+
+.grouping-Specifications::-webkit-scrollbar-thumb{
+    background-color: #c2c2c2;
+    border-radius: 5px;
+}
+
 .grouping-Specifications2{
     display: none;
     width: 82%;
@@ -845,6 +882,20 @@ a{
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #fff;
+}
+
+.grouping-Specifications2::-webkit-scrollbar{
+    width: 10px;
+}
+
+.grouping-Specifications2::-webkit-scrollbar-track{
+    background: #e8e8e8;
+    border-radius: 5px;
+}
+
+.grouping-Specifications2::-webkit-scrollbar-thumb{
+    background-color: #c2c2c2;
+    border-radius: 5px;
 }
 
 .grouping-Specifications-item1{
@@ -1427,7 +1478,7 @@ a{
         align-items: center;
         color: #8e8e8e;
     }
-
+    
     .history-responsive-body{
         width: 100%;
         height: 56px;
@@ -1443,7 +1494,7 @@ a{
         width: 86.21px;
         height: 40px;
         background-color: #0f4d73;
-        margin-right: 56px;
+        /* margin-right: 56px; */
     }
 
     .history-responsive-body-item2{
