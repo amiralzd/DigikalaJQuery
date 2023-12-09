@@ -13,7 +13,6 @@
 
 body{
     font-family: woff;
-    height: 2000px;
 }
 
 select,option{
@@ -361,6 +360,7 @@ a{
 /* nav */
 
 .nav{
+    background-color: #fff;
     max-width: 1528px;
     height: 40px;
     margin: auto;
@@ -371,6 +371,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0px 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .nav-items{
@@ -1479,38 +1480,45 @@ a{
         color: #8e8e8e;
     }
     
+
+
+
+    /* i have bug in this part (bug is scroll & flex) */
     .history-responsive-body{
         width: 100%;
         height: 56px;
         background-color: #ff8c88;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        overflow-x: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        position: absolute;
+        overflow-x: scroll;
+        /* display: flex; */
+        /* gap: 5px; */
+        /* overflow-y: hidden; */
     }
 
     .history-responsive-body-item1{
         width: 86.21px;
         height: 40px;
         background-color: #0f4d73;
-        /* margin-right: 56px; */
+        margin-right: 56px;
     }
 
     .history-responsive-body-item2{
         width: 90.81px;
         height: 40px;
-        background-color: #0f4d73;
+        background-color: #1b730f;
     }
     
     .history-responsive-body-item3{
         width: 158.85px;
         height: 40px;
-        background-color: #0f4d73;
+        background-color: #73140f;
     }
 
 
 }
+
+/*---------------------------------------------------*/
 
 
 
@@ -1534,3 +1542,40 @@ a{
 
 
 /* nav */
+
+
+
+
+/* main */
+
+
+.owl-item{
+    margin-left: 0;
+}
+
+.owl-theme{
+    margin-top: 20px;
+}
+
+.owl-nav{
+    width: 10%;
+    height: 40px;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+.owl-prev{
+    scale: 4;
+}
+
+.owl-next{
+    scale: 4;
+}
+
+
+/* main */
