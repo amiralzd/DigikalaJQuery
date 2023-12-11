@@ -13,7 +13,22 @@
 
 body{
     font-family: woff;
+    height: 2000px;
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #bbbbbb; 
+  }
 
 select,option{
     font-family: woff;
@@ -26,6 +41,14 @@ a{
 ::placeholder{
     font-family: woff;
 }
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    /* top: 68px; */
+    transition: all .3s ease;
+  }
 
 .header{
     max-width: 1528px;
@@ -365,7 +388,7 @@ a{
     height: 40px;
     margin: auto;
     position: sticky;
-    top: 68px;
+    /* top: 68px; */
     z-index: 99;
     display: flex;
     justify-content: space-between;
@@ -1273,12 +1296,11 @@ a{
 
 @media screen and (max-width:481px) {
 
-    .nav{
+    #navbar{
         width: 100%;
         height: 60px;
         position: fixed;
         bottom: 0;
-        top: auto;
         background-color: #cacaca;
         padding: 0;
     }
@@ -1550,11 +1572,21 @@ a{
 
 
 .owl-item{
-    margin-left: 0;
+    /* margin-left: 0; */
+}
+
+.item{
+    height: 400px;
+    background-color: #f11f19;
+    cursor: pointer;
+}
+
+.item img{
+    height: 400px;
 }
 
 .owl-theme{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .owl-nav{
@@ -1577,5 +1609,66 @@ a{
     scale: 4;
 }
 
+.owl-dots{
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+}
+
+
+
+.point{
+    max-width: 1336px;
+    height: 95.86px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.point-item{
+    width: 63px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.point-item1{
+    border-radius: 50%;
+}
+.point-item1 img{
+    border-radius: 50%;
+}
+
+.point-img{
+    width: 52px;
+    height: 52px;
+    border-radius: 32%;
+}
+
+.point-img img{
+    width: 52px;
+    height: 52px;
+}
+
+.point-text{
+    width: 100%;
+    height: 23.86px;
+    margin-top: 4px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point-more{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #cacaca;
+}
 
 /* main */

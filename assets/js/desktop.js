@@ -91,41 +91,26 @@ $(document).ready(function(){
 
 
 
-//---main---
-
-// $(document).ready(function(){
-// 	$('.owl-carousel').owlCarousel({
-// 		rtl:true,
-// 		loop:false,
-// 		margin:10,
-// 		nav:true,
-// 		responsive:{
-// 			0:{
-// 				items:1
-// 			},
-// 			600:{
-// 				items:3
-// 			},
-// 			1000:{
-// 				items:5
-// 			}
-// 		}
-// 	})
-// });
 
 
 $(document).ready(function(){
 	$('.owl-carousel').owlCarousel({
-		nav: true,
+		nav: false,
 		loop: true,
 		rtl: true,
 		items:1,
-		margin:50,
-		stagePadding:30,
+		margin:0,
+		stagePadding:0,
 		smartSpeed:450,
-		autoplay: 2000,
+		// autoplay: 3000,
+		responsive:{
+			600:{
+				nav: true,
+			}
+		}
 	});
 });
+
 
 //---main---
 
@@ -189,6 +174,23 @@ $(document).ready(function(){
 		})
 	});
 });
+
+
+
+
+//scrollTop 
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "4vw";
+	document.getElementById("header").style.boxShadow = "none";
+  } else {
+    document.getElementById("navbar").style.top = "0";
+	document.getElementById("header").style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px";
+  }
+  prevScrollpos = currentScrollPos;	
+}
 
 
 
