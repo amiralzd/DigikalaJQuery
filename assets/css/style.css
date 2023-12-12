@@ -1668,7 +1668,77 @@ a{
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background-color: #cacaca;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point-moreLoad{
+    width: 30px;
+    height: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.more-load1{
+    width: 6px;
+    height: 6px;
+    background-color: #a2a2a2;
+    border-radius: 50%;
+}
+.more-load2{
+    width: 6px;
+    height: 6px;
+    background-color: #a1a1a1;
+    border-radius: 50%;
+}
+.more-load3{
+    width: 6px;
+    height: 6px;
+    background-color: #a0a0a0;
+    border-radius: 50%;
+}
+
+.product-slider{
+    max-width: 1336px;
+    height: 300px;
+    background-color: #ff4e48;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px 0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 4px solid #ff4e48;
+    /* this will hide the scrollbar in mozilla based browsers */
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    /* this will hide the scrollbar in internet explorers */
+    -ms-overflow-style: none;
+}
+
+.product-slider::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+
+.product-container{
+    /* width: 1500px; */
+    height: 260px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.d{
+    width: 173px;
+    height: 260px;
+    background-color: #2aa5ad;
+    margin-left: 2px;
 }
 
 /* main */

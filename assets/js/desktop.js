@@ -102,7 +102,7 @@ $(document).ready(function(){
 		margin:0,
 		stagePadding:0,
 		smartSpeed:450,
-		// autoplay: 3000,
+		autoplay: 2000,
 		responsive:{
 			600:{
 				nav: true,
@@ -110,6 +110,12 @@ $(document).ready(function(){
 		}
 	});
 });
+
+
+
+
+
+
 
 
 //---main---
